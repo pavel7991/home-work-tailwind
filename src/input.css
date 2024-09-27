@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    @apply text-base;
+  }
+}
+
+.my-container {
+  @apply mx-auto w-full max-w-[1340px] px-5;
+}
+
+.btn-primary {
+  background-color: rgba(255, 255, 255, 0.1);
+  @apply hover:bg-accent-100 flex h-[60px] w-[250px] items-center justify-center border-2 border-white text-lg
+   tracking-widest text-white transition-colors;
+}
