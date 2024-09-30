@@ -18,6 +18,6 @@
 
 .btn-primary {
   background-color: rgba(255, 255, 255, 0.1);
-  @apply hover:bg-accent-100 flex h-[60px] w-[250px] items-center justify-center border-2 border-white text-lg
-   tracking-widest text-white transition-colors;
+  @apply md-max:h-[40px] md-max:w-[170px] flex items-center justify-center border-2 border-white text-base tracking-widest text-white transition-colors hover:bg-accent-100
+  md:h-[50px] md:w-[200px] lg:h-[60px] lg:w-[250px] lg:text-lg;
 }

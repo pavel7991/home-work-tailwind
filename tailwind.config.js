@@ -2,14 +2,6 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    screens: {
-      sm: "576px",
-      md: "768px",
-      lg: "992px",
-      xl: "1200px",
-      "2xl": "1340px",
-    },
-
     colors: {
       primary: "#2d3651",
       accent: {
@@ -31,6 +23,16 @@ module.exports = {
     },
 
     extend: {
+      screens: {
+        sm: "576px",
+        md: "768px",
+        "md-max": { max: "767px" },
+        lg: "992px",
+        "lg-max": { max: "991px" },
+        xl: "1200px",
+        "2xl": "1340px",
+      },
+
       backgroundImage: {
         "header-bg": "url('../img/img-header.png')",
       },
