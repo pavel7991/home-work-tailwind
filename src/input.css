@@ -10,6 +10,12 @@
     overflow-y: scroll;
     @apply text-base;
   }
+  h1 {
+    @apply text-center font-slab font-light tracking-[.078em] text-white lg:mb-14 lg:text-6xl md-max:mb-7 md-max:text-3xl md:lg-max:mb-9 md:lg-max:text-5xl;
+  }
+  h2 {
+    @apply font-bold tracking-widest text-blue lg:text-4xl sm-max:text-center md-max:text-2xl md:lg-max:text-3xl;
+  }
 }
 
 .my-container {
@@ -18,6 +24,10 @@
 
 .btn-primary {
   background-color: rgba(255, 255, 255, 0.1);
-  @apply md-max:h-[40px] md-max:w-[170px] flex items-center justify-center border-2 border-white text-base tracking-widest text-white transition-colors hover:bg-accent-100
-  md:h-[50px] md:w-[200px] lg:h-[60px] lg:w-[250px] lg:text-lg;
+  @apply flex items-center justify-center border-2 border-white tracking-widest text-white transition-colors hover:bg-accent-100 lg:h-[60px] lg:w-[250px] lg:text-lg
+  md-max:h-[40px] md-max:w-[170px] lg-max:text-base md:lg-max:h-[50px] md:lg-max:w-[200px];
+}
+
+.text-description p {
+  @apply mb-5 tracking-wide text-grey-200 last:mb-0 md:text-lg/6 md-max:text-base;
 }

@@ -10,10 +10,11 @@ module.exports = {
       },
       black: "#000000",
       white: "#ffffff",
-      gray: {
+      grey: {
         100: "#e5e5e5",
         200: "#637588",
         300: "#44596e",
+        400: "#707070",
       },
       blue: "#2D3651",
     },
@@ -24,13 +25,19 @@ module.exports = {
 
     extend: {
       screens: {
-        sm: "576px",
-        md: "768px",
-        "md-max": { max: "767px" },
-        lg: "992px",
-        "lg-max": { max: "991px" },
+        sm: "577px",
+        "sm-max": { max: "576px" },
+        md: "769px",
+        "md-max": { max: "768px" },
+        lg: "993px",
+        "lg-max": { max: "992px" },
         xl: "1200px",
         "2xl": "1340px",
+      },
+
+      fontSize: {
+        "text-3xl": ["2rem", "2.5rem"],
+        "text-4xl": ["2.5rem", "3rem"],
       },
 
       backgroundImage: {
